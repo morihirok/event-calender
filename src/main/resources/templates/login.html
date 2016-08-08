@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="UTF-8" />
+<link rel="stylesheet"
+	href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<title>ログインページ</title>
+</head>
+<body>
+	<div class="container">
+		<form action="/LoginController" method="post">
+			<div class="row">
+				<label><span class="col-md-4">名前</span><input type="text"
+					name="name" class="col-md-8"></input></label>
+			</div>
+			<div class="row">
+				<label><span class="col-md-4">パスワード</span><input
+					type="password" name="pass" class="col-md-8"></input></label>
+			</div>
+			<button type="button" class="row col-md-4 btn btn-primary">送信</button>
+		</form>
+	</div>
+</body>
+</html>
