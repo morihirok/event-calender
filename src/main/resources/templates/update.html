@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="UTF-8" />
+<link rel="stylesheet"
+	href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<style type="text/css">
+</style>
+<title>Update Page</title>
+</head>
+<body>
+<h1>Update Form</h1>
+	<div class="container">
+		<h1 class="text-center">Update Event Data</h1>
+		<form action="/create" method="post" th:object="${eventForm}" class="form-horizontal">
+			<div class="form-group">
+				<label for="inputName" class="col-xs-2 control-label">Id</label>
+				<div class="col-xs-10">
+					<input type="text" class="form-control" id="inputName"
+						placeholder="Name" th:field="*{id}" ></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputDate" class="col-xs-2 control-label">Date</label>
+				<div class="col-xs-10">
+					<input type="password" class="form-control" id="inputDate"
+						placeholder="Password" th:field="*{date}"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputPlace" class="col-xs-2 control-label">Place</label>
+				<div class="col-xs-10">
+					<input type="password" class="form-control" id="inputPlace"
+						placeholder="Password" th:field="*{place}"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputPlaceUrl" class="col-xs-2 control-label">Place Url</label>
+				<div class="col-xs-10">
+					<input type="password" class="form-control" id="inputPlaceUrl"
+						placeholder="Password" th:field="*{placeUrl}"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputOpenTime" class="col-xs-2 control-label">Open Time</label>
+				<div class="col-xs-10">
+					<input type="password" class="form-control" id="inputOpenTime"
+						placeholder="Password" th:field="*{openTime}"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputStartTime" class="col-xs-2 control-label">Start Time</label>
+				<div class="col-xs-10">
+					<input type="password" class="form-control" id="inputStartTime"
+						placeholder="Password" th:field="*{startTime}"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputPrice" class="col-xs-2 control-label">Price</label>
+				<div class="col-xs-10">
+					<input type="password" class="form-control" id="inputPrice"
+						placeholder="Password" th:field="*{Price}"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputOther" class="col-xs-2 control-label">Other</label>
+				<div class="col-xs-10">
+					<input type="password" class="form-control" id="inputOther"
+						placeholder="Password" th:field="*{other}"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-xs-offset-2 col-xs-10">
+					<button type="submit" class="btn btn-primary btn-lg">Update</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
