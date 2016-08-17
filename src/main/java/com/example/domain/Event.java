@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Event {
 	private Integer id;
+	private String title;
 	private LocalDate date;
 	private String place;
 	private String placeUrl;
@@ -19,4 +20,5 @@ public class Event {
 	private LocalTime startTime;
 	private Integer price;
 	private String other;
+	
 }

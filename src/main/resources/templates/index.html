@@ -9,9 +9,39 @@
 	src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <style type="text/css">
 </style>
-<title>イベントカレンダー</title>
+<title>Event calender</title>
 </head>
 <body>
-<h2>index page</h2>
+	<!-- 1.ナビゲーションバーの設定 -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<!-- 2.ヘッダ情報 -->
+			<div class="navbar-header">
+				<a class="navbar-brand">EVENT CALENDER</a>
+			</div>
+			<!-- 3.リストの配置 -->
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">TOP</a></li>
+				<li><a href="#">ABOUT US</a></li>
+				<li><a href="#">PAST EVENT</a></li>
+			</ul>
+			<!-- 4.ボタン -->
+			<button type="button" class="btn btn-default navbar-btn">
+				MAIL 	<span class="glyphicon glyphicon-envelope"></span>
+			</button>
+		</div>
+	</nav>
+	<div class="container">
+		<div id="recent-event">
+			<h2>index page</h2>
+			<div th:text="${event.title}"></div>
+			<div th:text="|SITE FOR ${event.place}|"></div>
+			<div th:text="|Date  :  ${event.date}|"></div>
+			<div th:text="|Open  :  ${event.openTime}|"></div>
+			<div th:text="|Start :  ${event.startTime}|"></div>
+			<div th:text="|price :  ${event.startTime} yen|"></div>
+			<div th:text="|notice:  ${event.other} yen|"></div>
+		</div>
+	</div>
 </body>
 </html>
