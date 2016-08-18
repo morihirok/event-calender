@@ -15,10 +15,16 @@ public class UpdateController {
 		return new EventForm();
 	}
 
-	public String create(Event createEvent) {
-
-		System.out.println("in create()");
+	@RequestMapping("")
+	public String updateForm() {
 
 		return "update";
+	}
+	
+	@RequestMapping("/create")
+	public String create(EventForm event){
+		
+		
+		return updateForm();
 	}
 }

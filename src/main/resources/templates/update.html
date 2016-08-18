@@ -5,71 +5,74 @@
 <meta charset="UTF-8" />
 <link rel="stylesheet"
 	href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
-<script
-	src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<style type="text/css">
-</style>
+
+<link rel="stylesheet"
+	href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.0.0/css/bootstrap-datetimepicker.min.css" />
+
 <title>Update Page</title>
 </head>
 <body>
-<h1>Update Form</h1>
+	<h1>Update Form</h1>
 	<div class="container">
 		<h1 class="text-center">Update Event Data</h1>
-		<form action="/create" method="post" th:object="${eventForm}" class="form-horizontal">
+		<form action="/update/create" method="post" th:object="${eventForm}"
+			class="form-horizontal">
 			<div class="form-group">
-				<label for="inputName" class="col-xs-2 control-label">Id</label>
+				<label for="inputTitle" class="col-xs-2 control-label">Event
+					Title</label>
 				<div class="col-xs-10">
-					<input type="text" class="form-control" id="inputName"
-						placeholder="Name" th:field="*{id}" ></input>
+					<input type="text" class="form-control" id="inputTitle"
+						placeholder="event title" th:field="*{title}"></input>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="inputDate" class="col-xs-2 control-label">Date</label>
 				<div class="col-xs-10">
-					<input type="password" class="form-control" id="inputDate"
-						placeholder="Password" th:field="*{date}"></input>
+					<input type="date" class="form-control" id="inputDate"
+						placeholder="date" th:field="*{date}"></input>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="inputPlace" class="col-xs-2 control-label">Place</label>
 				<div class="col-xs-10">
-					<input type="password" class="form-control" id="inputPlace"
-						placeholder="Password" th:field="*{place}"></input>
+					<input type="text" class="form-control" id="inputPlace"
+						placeholder="Place" th:field="*{place}"></input>
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="inputPlaceUrl" class="col-xs-2 control-label">Place Url</label>
+				<label for="inputPlaceUrl" class="col-xs-2 control-label">Place
+					Url</label>
 				<div class="col-xs-10">
-					<input type="password" class="form-control" id="inputPlaceUrl"
-						placeholder="Password" th:field="*{placeUrl}"></input>
+					<input type="text" class="form-control" id="inputPlaceUrl"
+						placeholder="URL" th:field="*{placeUrl}"></input>
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="inputOpenTime" class="col-xs-2 control-label">Open Time</label>
-				<div class="col-xs-10">
-					<input type="password" class="form-control" id="inputOpenTime"
-						placeholder="Password" th:field="*{openTime}"></input>
+				<label for="inputOpenTime" class="col-xs-2 control-label">Open
+					Time</label>
+				<div class="col-xs-4">
+					<input type="time" class="form-control" id="inputOpenTime"
+						placeholder="Open Time" th:field="*{openTime}"></input>
 				</div>
-			</div>
-			<div class="form-group">
-				<label for="inputStartTime" class="col-xs-2 control-label">Start Time</label>
-				<div class="col-xs-10">
-					<input type="password" class="form-control" id="inputStartTime"
-						placeholder="Password" th:field="*{startTime}"></input>
+				<label for="inputStartTime" class="col-xs-2 control-label">Start
+					Time</label>
+				<div class="col-xs-4">
+					<input type="time" class="form-control" id="inputStartTime"
+						placeholder="Start Time" th:field="*{startTime}"></input>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="inputPrice" class="col-xs-2 control-label">Price</label>
 				<div class="col-xs-10">
-					<input type="password" class="form-control" id="inputPrice"
-						placeholder="Password" th:field="*{Price}"></input>
+					<input type="text" class="form-control" id="inputPrice"
+						placeholder="Price" th:field="*{Price}"></input>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="inputOther" class="col-xs-2 control-label">Other</label>
 				<div class="col-xs-10">
-					<input type="password" class="form-control" id="inputOther"
-						placeholder="Password" th:field="*{other}"></input>
+					<input type="text" class="form-control" id="inputOther"
+						placeholder="Other" th:field="*{other}"></input>
 				</div>
 			</div>
 			<div class="form-group">
@@ -80,5 +83,17 @@
 		</form>
 	</div>
 
+	<script
+		src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.6.0/moment.min.js"></script>
+	<script
+		src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.6.0/lang/ja.js"></script>
+	<script
+		src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script type="text/javascript"
+		src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript"
+		src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script
+		src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
 </body>
 </html>

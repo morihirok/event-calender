@@ -14,7 +14,7 @@
 <body>
 	<div class="container">
 		<h1 class="text-center">Login Page</h1>
-		<form action="/confirm" method="post" th:object="${userForm}" class="form-horizontal">
+		<form action="/login/confirm" method="post" th:object="${userForm}" class="form-horizontal">
 			<div class="form-group">
 				<label for="inputName" class="col-xs-2 control-label">Name</label>
 				<div class="col-xs-10">
@@ -35,6 +35,9 @@
 				</div>
 			</div>
 		</form>
+		<div class="col-xs-offset-2 col-xs-10">
+			<a href="/login/createUserForm">Create New User</a>
+		</div>
 	</div>
 
 </body>

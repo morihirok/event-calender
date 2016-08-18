@@ -1,7 +1,5 @@
 package com.example.domain;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,11 +11,11 @@ import lombok.NoArgsConstructor;
 public class Event {
 	private Integer id;
 	private String title;
-	private LocalDate date;
+	private String date;
 	private String place;
 	private String placeUrl;
-	private LocalTime openTime;
-	private LocalTime startTime;
+	private String openTime;
+	private String startTime;
 	private Integer price;
 	private String other;
 	
