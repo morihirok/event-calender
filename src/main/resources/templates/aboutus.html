@@ -5,6 +5,7 @@
 <meta charset="UTF-8" />
 <link rel="stylesheet"
 	href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/myStyle.css" />
 <script
 	src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <style type="text/css">
@@ -21,8 +22,8 @@
 			</div>
 			<!-- 3.リストの配置 -->
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="/">TOP</a></li>
-				<li><a href="/aboutus">ABOUT US</a></li>
+				<li><a href="/">TOP</a></li>
+				<li class="active"><a href="/aboutus">ABOUT US</a></li>
 				<li><a href="#">PAST EVENT</a></li>
 			</ul>
 			<!-- 4.ボタン -->
@@ -32,16 +33,7 @@
 		</div>
 	</nav>
 	<div class="container">
-		<div id="recent-event">
-			<h2>index page</h2>
-			<div th:text="${event.title}"></div>
-			<div th:text="|SITE FOR ${event.place}|"></div>
-			<div th:text="|Date  :  ${event.date}|"></div>
-			<div th:text="|Open  :  ${event.openTime}|"></div>
-			<div th:text="|Start :  ${event.startTime}|"></div>
-			<div th:text="|price :  ${event.startTime} yen|"></div>
-			<div th:text="|notice:  ${event.other} yen|"></div>
-		</div>
+		<h1>Change The World</h1>	
 	</div>
 </body>
 </html>

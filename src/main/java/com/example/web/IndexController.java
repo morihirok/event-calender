@@ -20,4 +20,9 @@ public class IndexController {
 		return "index";
 	}
 
+	@RequestMapping("/aboutus")
+	public String aboutus(){
+		
+		return "aboutus";
+	}
 }
